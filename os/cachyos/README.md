@@ -6,7 +6,7 @@ CachyOS Linux is not meant to be used as a server but as regular daily driver op
 
 **Tip:** Since we are installing CachyOS as a server OS, we can opt out of installing any desktop environment or GUI. When the installer prompts you to choose a desktop environment simply choose "No Desktop" (KDE Plasma should have been already selected as the default option).
 
-[CachyOS Linux](https://fedoraproject.org/server/)
+[CachyOS Linux](https://cachyos.org/download/)
 
 ## Setting Up
 
