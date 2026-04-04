@@ -67,13 +67,13 @@ Now we can access our local homelab server from another device in our local netw
 # To access user 'atomic' on server with IP '192.168.1.3'
 ssh atomic@192.168.1.3
 
-# It prompts the user for confirmation of finger; type "yes"
+# It prompts the user for confirmation of fingerprint; type "yes"
 # and then type your password for the server user to enter.
 ```
 
 **Setting Up Docker**
 
-Docker is containerization platform, tool and manager for using and managing containerized applications. In simple words, it solves the problem of distributing software/services by isolating all the dependencies of an application into an isolated and reproducible environment so that there won't be a situation where a user experiences difficulty setting up the same application that others claim that "it runs on their machines".
+Docker is a containerization platform, a tool and a manager for using and managing containerized applications. In simple words, it solves the problem of distributing software/services by isolating all the dependencies of an application into an isolated and reproducible environment so that there won't be a situation where a user experiences difficulty setting up the same application that others claim that "it runs on their machines".
 
 ```bash
 # Fedora
