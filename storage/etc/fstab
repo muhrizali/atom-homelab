@@ -1,0 +1,16 @@
+# Append at the end of /etc/fstab file:
+
+# DATA DRIVES:
+
+# 3TB-HDD
+UUID="63f74c83-dd83-4685-bfaf-02a2fec3a8f3" /media/data1 xfs defaults 0 0
+# 2TB-HDD
+UUID="97e1cbbf-5777-430d-a4ee-37cc5512a468" /media/data2 xfs defaults 0 0
+# 2TB-HDD
+UUID="db316557-9617-459c-9445-593159e1097a" /media/data3 xfs defaults 0 0
+
+# 1TB-HDD
+#UUID="fad3530e-c31f-4f97-9ad7-6886ee04353f" /media/data3 xfs defaults 0 0
+
+# MergerFS POOL OF DRIVES
+/media/data* /media/storage mergerfs cache.files=off,category.create=pfrd,func.getattr=newest,dropcacheonclose=false,minfreespace=200G 0 0
