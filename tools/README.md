@@ -1,6 +1,6 @@
 ## Setting Up SSH
 
-Since `ssh` is such a widely used service, it is found in all of the Linux distributions, but installing it might be a little different depending on the package manager you are using. The `ssh` service itself is provided by the `openssh` package:
+Since `ssh` is such a widely used service utility, it is found in all of the Linux distributions, but installing it might be a little different depending on the package manager you are using. The `ssh` command itself is provided by the `openssh` package:
 
 ```bash
 # Fedora
@@ -23,7 +23,7 @@ sudo systemctl enable --now sshd
 sudo systemctl status sshd
 ```
 
-Fedora server and the CachyOS distributions are protected by network firewall which deliberately blocks some of your network ports from outside access for security purposes. To access our server from local network, we need to open the port reponsible for SSH (the port 22) on respective firewall software:
+Fedora server and the CachyOS distributions are protected by network firewall which deliberately blocks almost all of your network ports from outside access for security purposes. To access our server from local network, we need to open the port reponsible for SSH communication (the port 22) on respective firewall software:
 
 ```bash
 # Fedora uses firewall-cmd for firewall
@@ -71,28 +71,3 @@ Finally, after installation of all `docker` related packages, we need to enable 
 # Starting and enabling docker service
 sudo systemctl enable --now docker
 ```
-
-**Basic Service Management**
-
-We will be working with many other services apart from `ssh` and `docker`, so it might be useful to know some basic commands for managing various Linux services:
-
-```bash
-# Starting a service
-sudo systemctl start [service]
-
-# Stopping a service
-sudo systemctl stop [service]
-
-# Enabling a service so it always starts at bootup
-sudo systemctl enable [service]
-
-# Disabling a service so it doesn't start at bootup
-sudo systemctl disable [service]
-
-# Enable and start the service at the same time
-sudo systemctl enable --now [service]
-
-# Disable and stop the service at the same time
-sudo systemctl disable --now [service]
-```
-

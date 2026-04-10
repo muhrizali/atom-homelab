@@ -18,13 +18,13 @@ We will be primarily using Linux for the main operating system for maximum throu
 
 **[CachyOS](os/cachyos/):** At first, CachyOS seems to be one of the most unconventional choice for server operations but in my case (and other undocumented cases of people using it) it has proved itself to be a simple, blazing fast and bleeding edge operating system. Its an operating system based on the popular Arch Linux project and provides user-friendly defaults, deep hardware optimizations and easy security on top of it. Recommended only for people who want to experiment or for those who are well versed with Linux ecosystem.
 
-## Essential Services
+## Essential Tools
 
 After choosing and installing our operating system, we need to install some essential services which need to be running in our server (preferably) at all times.
 
-**[SSH](services/):** For securely and remotely accessing our homelab server terminal CLI.
+**[SSH](services/):** For securely and remotely accessing our homelab server terminal CLI. It is a little convinient to operate your server computer from a remote PC (like laptop) than to always be present at the face of it.
 
-**[Docker](services/):** For using and managing containerized applications and services.
+**[Docker](services/):** For using and managing containerized applications and services. It makes setting up some of the most notoriously difficult applications seem like a breeze.
 
 ## Storage Pool
 
@@ -36,3 +36,8 @@ We will be carrying out this procedure by first wiping the hard drives attached 
 
 **[Pooling Drives](storage/README.md#setting-up-mergerfs):** Pooling our drives into a single large mounted volume as a folder.
 
+## Container Applications
+
+Now we can finally move on to the fun part of setting up our container self-hosted applications as docker container applications. We will be using docker and docker compose for running our applications. And we will be using compose YAML files for setting up the container before running them.
+
+**[Container Applications](docker/):** List of some docker container applications that I like and their compose YAML files for straightforward configuration.
